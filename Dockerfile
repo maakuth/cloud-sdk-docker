@@ -24,4 +24,5 @@ RUN sed -i -- 's/\"disable_updater\": false/\"disable_updater\": true/g' /google
 RUN mkdir /.ssh
 ENV PATH /google-cloud-sdk/bin:$PATH
 VOLUME ["/.config"]
+VOLUME ["/.kube"]
 CMD ["/bin/bash"]
